@@ -1,125 +1,90 @@
 # Manoa Rest Stop
 
-## A UH Manoa bathroom locator and community review platform
+## A UH Manoa bathroom locator and community review site
 
 * [Overview](#overview)
-* [The problem](#the-problem)
-* [The solution](#the-solution)
-* [Current prototype](#current-prototype)
-* [User guide](#user-guide)
-* [Trust and privacy](#trust-and-privacy)
-* [Development history](#development-history)
-* [Future enhancements](#future-enhancements)
+* [User Guide](#user-guide)
+* [Community Feedback](#community-feedback)
+* [Developer Guide](#developer-guide)
+* [Development History](#development-history)
+* [Example Enhancements](#example-enhancements)
 * [Deployment](#deployment)
 * [Team](#team)
 
 ## Overview
 
-Manoa Rest Stop helps UH Manoa students find a restroom that fits their needs before they make the trip across campus. The site combines a searchable bathroom directory, an interactive map, community ratings, and short-lived cleanliness reports in one place.
+Manoa Rest Stop is a website that helps UH Manoa students find and compare campus bathrooms. Students can search for a bathroom, view its location and details, read reviews, and submit updates about its current condition.
 
-The project is designed around a simple question: **Which campus restroom should I use right now?** A student can compare locations, inspect details such as accessibility and supplies, read recent reports, and contribute an update after visiting.
+The project addresses a simple problem: students often do not know whether a bathroom is clean, crowded, missing supplies, or accessible before they use it.
 
-* [Application source repository](https://github.com/manoa-bathroom-finder/manoa-bathroom-finder)
-* [Manoa Bathroom Finder GitHub organization](https://github.com/manoa-bathroom-finder)
+The planned system includes:
 
-## The problem
+* A bathroom directory with locations, restroom types, stall counts, renovation dates, and accessibility information.
+* Community ratings for cleanliness, odor, and overall experience.
+* Recent reports for conditions such as missing soap, missing toilet paper, high odor, or long lines.
+* Search, filters, an interactive map, favorites, and an administrator review queue.
 
-Students often enter a UH Manoa bathroom without knowing whether it is clean, crowded, missing supplies, or unpleasant to use. Information is scattered, conditions change during the day, and there is no central community resource for comparing campus restrooms.
+The project source is available in the [Manoa Bathroom Finder repository](https://github.com/manoa-bathroom-finder/manoa-bathroom-finder).
 
-This creates several related problems:
+## User Guide
 
-* Students cannot easily find nearby restrooms that match their needs.
-* Long-term quality and short-term conditions are mixed together.
-* Important details such as accessibility, stall count, renovation history, and supplies are difficult to compare.
-* Facilities staff and student users lack a focused channel for reporting problems or correcting location data.
+### Bathroom Directory
 
-## The solution
+The directory lets students search by building, floor, or room number. Filters can be used to find highly rated, accessible, renovated, or recently reported bathrooms.
 
-Manoa Rest Stop provides a campus-wide directory where each restroom can have:
+### Interactive Map
 
-* A location, building, floor, restroom type, stall count, accessibility information, and renovation history.
-* An overall community rating with separate cleanliness and odor scores.
-* Recent flash reports for conditions that may change quickly, such as missing paper, high odor, or long lines.
-* Student comments, tags, helpfulness votes, and a way to flag a report.
-* Favorites so students can quickly return to restrooms they trust.
+The map displays restroom locations across campus. Selecting a location shows its details and allows the student to inspect or report its condition.
 
-The application separates overall ratings from real-time reports. A restroom can have a strong long-term rating while still having a temporary supply problem, and users should be able to see both facts.
+### Bathroom Details
 
-## Current prototype
+The details view shows the restroom type, stall count, renovation date, accessibility information, favorites, ratings, and recent community reports.
 
-The project currently includes two front-end mockups:
+### Reviews
 
-* `loolocator_campus.html` demonstrates the main directory, search and filter controls, restroom cards, an interactive Leaflet map, bathroom details, favorites, a student/admin role switcher, and an admin request queue.
-* `campus_bathroom_rating_reviews.html` demonstrates detailed reviews, quick flash reports, live review previews, rating controls, supply checks, tags, community-feed filters, helpfulness votes, and report flagging.
+Students can submit an overall star rating, cleanliness score, odor score, supply checks, tags, and a written comment. The review prototype also includes a preview of the post before it is submitted.
 
-The prototype uses HTML, CSS, and JavaScript with Tailwind CSS, Font Awesome, Google Fonts, and Leaflet loaded from CDNs. It is intentionally focused on validating the user experience. Data is currently stored in the browser mockup, so authentication, a shared database, and permanent moderation are planned production work rather than completed features.
+### Quick Reports
 
-## User guide
+Students can quickly report that a restroom was freshly sanitized, out of paper or soap, high odor, or crowded. They can also add a short note.
 
-### Find a restroom
+### Administration
 
-The directory is the primary landing experience. Students can:
+Administrators will be able to review bathroom requests, data corrections, reviews, and condition reports before approving or rejecting them.
 
-* Search by building, floor, or room number.
-* Filter by rating, restroom type, accessibility, renovation status, or odor alerts.
-* Compare summary cards showing ratings, supplies, favorites, and recent status.
-* Open a restroom on the map or inspect its full details.
+## Community Feedback
 
-### Inspect restroom details
+The project is intended to make it easier for students to find useful and current information about campus bathrooms. Feedback will help us decide which details are most useful, how reports should be moderated, and which filters students use most often.
 
-The detail view presents the information needed to make a quick decision, including renovation date, stall count, restroom type, accessibility, favorites, average ratings, and the latest community reports.
+## Developer Guide
 
-### Post a detailed review
+The current version is a front-end prototype made with HTML, CSS, and JavaScript. It uses Tailwind CSS, Font Awesome, Google Fonts, and Leaflet through CDNs.
 
-After using a restroom, a student can submit:
+The main prototype files are:
 
-* An overall star rating.
-* Separate cleanliness and odor scores.
-* Supply checks for toilet paper, soap, and hand dryers.
-* Descriptive tags such as `#Clean`, `#FreshlyRenovated`, `#Quiet`, `#NoSoap`, `#OutOfOrder`, or `#Crowded`.
-* A written comment with a live preview before posting.
+* `loolocator_campus.html` — bathroom directory, map, bathroom details, favorites, and admin queue.
+* `campus_bathroom_rating_reviews.html` — ratings, reviews, quick reports, and the community feed.
 
-### Send a quick flash report
+The current mockup uses sample data in the browser. A production version will need a shared database, authentication, authorization, and permanent moderation.
 
-When a condition needs immediate attention, a student can post a short status update using presets such as freshly sanitized, out of paper or soap, high odor, or long line. A note can add specific context, such as which stall is affected.
+## Development History
 
-### Review the community feed
+The project began as a proposal for a UH Manoa bathroom locator and tier list. The first prototypes focused on the main directory and map. Later work added detailed reviews, live condition reports, supply checks, community-feed filters, and administrator workflows.
 
-Students can sort reports by recency, helpfulness, or cleanliness and filter for five-star reviews, high odor, or missing supplies. Helpful and unhelpful votes surface useful reports, while flagging supports moderation.
+The next major step is connecting the prototype to persistent application data so that students can see the same reviews and reports across devices.
 
-### Manage the directory
+## Example Enhancements
 
-Admins will be able to review bathroom additions, data corrections, reviews, and reports. The planned admin workflow separates pending, approved, and rejected requests so that directory information stays accountable and current.
-
-## Trust and privacy
-
-The design attributes reports to verified student email accounts to discourage spam and improve accountability. Production implementation should display only the minimum identity information needed by the community and should never expose a user's exact location.
-
-Because bathroom conditions change, each report should show when it was created and the application should clearly distinguish current reports from historical averages. Moderation tools and community guidelines will help keep comments useful and respectful.
-
-## Development history
-
-The idea began with a project proposal focused on making restroom quality visible to the UH Manoa community. Early planning identified the core roles and use cases:
-
-* Students browse, search, favorite, review, and report bathrooms.
-* Admins approve or reject bathroom requests, data changes, reviews, and reports.
-* Users can compare bathrooms by location, cleanliness, odor, supplies, and recent activity.
-
-The current iteration turned those use cases into interactive HTML mockups. The next implementation milestone is to connect the directory and review flows to shared application data rather than browser-only sample data.
-
-## Future enhancements
-
-* Build the production application with a persistent database, authentication, and role-based authorization.
-* Add directions, building hours, accessibility details, and campus map integration.
-* Rank locations with a transparent tier list based on community ratings and recent reports.
-* Notify users when a favorite restroom receives a new report or its rating changes.
-* Add charts showing cleanliness and odor trends over time.
-* Add moderation history, community guidelines, and facilities-maintenance escalation.
-* Support organizations or campus groups that want to help maintain accurate location data.
+* Add directions and building hours.
+* Add notifications for favorited bathrooms.
+* Add charts showing cleanliness and odor over time.
+* Add a transparent bathroom tier list.
+* Add moderation history and community guidelines.
+* Allow facilities staff to respond to reports.
 
 ## Deployment
 
-This Bowfolio is published through GitHub Pages at [manoa-bathroom-finder.github.io](https://manoa-bathroom-finder.github.io/). The application mockups and source documentation are maintained in the [Manoa Rest Stop source repository](https://github.com/manoa-bathroom-finder/manoa-bathroom-finder).
+The Bowfolio is deployed at [manoa-bathroom-finder.github.io](https://manoa-bathroom-finder.github.io/).
 
 ## Team
 
