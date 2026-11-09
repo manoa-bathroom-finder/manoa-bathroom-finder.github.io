@@ -1,19 +1,21 @@
 # Manoa Rest Stop
 
-## A UH Manoa bathroom locator and community review site
+## Table of contents
 
 * [Overview](#overview)
+* [Deployment](#deployment)
 * [User Guide](#user-guide)
 * [Community Feedback](#community-feedback)
 * [Developer Guide](#developer-guide)
 * [Development History](#development-history)
-* [Example Enhancements](#example-enhancements)
-* [Deployment](#deployment)
+* [Continuous Integration](#continuous-integration)
+* [Walkthrough videos](#walkthrough-videos)
+* [Example enhancements](#example-enhancements)
 * [Team](#team)
 
 ## Overview
 
-Manoa Rest Stop is a website that helps UH Manoa students find and compare campus bathrooms. Students can search for a bathroom, view its location and details, read reviews, and submit updates about its current condition.
+Manoa Rest Stop is a web application that helps UH Manoa students find and compare campus bathrooms. Students can search for a bathroom, view its location and details, read reviews, and submit updates about its current condition.
 
 The project addresses a simple problem: students often do not know whether a bathroom is clean, crowded, missing supplies, or accessible before they use it.
 
@@ -24,7 +26,13 @@ The planned system includes:
 * Recent reports for conditions such as missing soap, missing toilet paper, high odor, or long lines.
 * Search, filters, an interactive map, favorites, and an administrator review queue.
 
-The project source is available in the [Manoa Bathroom Finder repository](https://github.com/manoa-bathroom-finder/manoa-bathroom-finder).
+The current prototype is built with HTML, CSS, and JavaScript. It uses Tailwind CSS, Font Awesome, Google Fonts, and Leaflet through CDNs.
+
+## Deployment
+
+The Manoa Rest Stop Bowfolio is deployed at [manoa-bathroom-finder.github.io](https://manoa-bathroom-finder.github.io/).
+
+The application source is available in the [Manoa Bathroom Finder repository](https://github.com/manoa-bathroom-finder/manoa-bathroom-finder).
 
 ## User Guide
 
@@ -58,9 +66,7 @@ The project is intended to make it easier for students to find useful and curren
 
 ## Developer Guide
 
-The current version is a front-end prototype made with HTML, CSS, and JavaScript. It uses Tailwind CSS, Font Awesome, Google Fonts, and Leaflet through CDNs.
-
-The main prototype files are:
+The current prototype does not require a build step. The main prototype files are:
 
 * `loolocator_campus.html` — bathroom directory, map, bathroom details, favorites, and admin queue.
 * `campus_bathroom_rating_reviews.html` — ratings, reviews, quick reports, and the community feed.
@@ -73,7 +79,15 @@ The project began as a proposal for a UH Manoa bathroom locator and tier list. T
 
 The next major step is connecting the prototype to persistent application data so that students can see the same reviews and reports across devices.
 
-## Example Enhancements
+## Continuous Integration
+
+Continuous integration has not been added yet. A future GitHub Actions workflow will build the application and run checks for the front-end code.
+
+## Walkthrough videos
+
+Walkthrough videos have not been recorded yet. A future walkthrough will demonstrate searching for a bathroom, inspecting its details, submitting a review, and posting a quick condition report.
+
+## Example enhancements
 
 * Add directions and building hours.
 * Add notifications for favorited bathrooms.
@@ -81,10 +95,6 @@ The next major step is connecting the prototype to persistent application data s
 * Add a transparent bathroom tier list.
 * Add moderation history and community guidelines.
 * Allow facilities staff to respond to reports.
-
-## Deployment
-
-The Bowfolio is deployed at [manoa-bathroom-finder.github.io](https://manoa-bathroom-finder.github.io/).
 
 ## Team
 
