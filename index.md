@@ -46,6 +46,8 @@ The directory lets students search by building, floor, or room number. Filters c
 
 The map displays restroom locations across campus. Selecting a location shows its details and allows the student to inspect or report its condition.
 
+![Interactive map mockup](bathroom-map.png)
+
 ### Bathroom Details
 
 The details view shows the restroom type, stall count, renovation date, accessibility information, favorites, ratings, and recent community reports.
@@ -58,9 +60,13 @@ Students can submit an overall star rating, cleanliness score, odor score, suppl
 
 Students can quickly report that a restroom was freshly sanitized, out of paper or soap, high odor, or crowded. They can also add a short note.
 
+![Demo cleanliness report form](bathroom-reports.png)
+
 ### Administration
 
 Administrators will be able to review bathroom requests, data corrections, reviews, and condition reports before approving or rejecting them.
+
+![Administration mockup](bathroom-admin.png)
 
 ## Community Feedback
 
