@@ -1,4 +1,4 @@
-# Manoa Rest Stop
+# manoa-bathroom-finder
 
 ## Table of contents
 
@@ -15,7 +15,7 @@
 
 ## Overview
 
-Manoa Rest Stop is a web application that helps UH Manoa students find and compare campus bathrooms. Students can search for a bathroom, view its location and details, read reviews, and submit updates about its current condition.
+manoa-bathroom-finder is a web application that helps UH Manoa students find and compare campus bathrooms. Students can search for a bathroom, view its location and details, read reviews, and submit updates about its current condition.
 
 The project addresses a simple problem: students often do not know whether a bathroom is clean, crowded, missing supplies, or accessible before they use it.
 
@@ -30,15 +30,17 @@ The current prototype is built with HTML, CSS, and JavaScript. It uses Tailwind 
 
 ## Deployment
 
-The Manoa Rest Stop Bowfolio is deployed at [manoa-bathroom-finder.github.io](https://manoa-bathroom-finder.github.io/).
+The manoa-bathroom-finder project home page is deployed at [manoa-bathroom-finder.github.io](https://manoa-bathroom-finder.github.io/).
 
-The application source is available in the [Manoa Bathroom Finder repository](https://github.com/manoa-bathroom-finder/manoa-bathroom-finder).
+The application source is available in the [manoa-bathroom-finder repository](https://github.com/manoa-bathroom-finder/manoa-bathroom-finder).
 
 ## User Guide
 
 ### Bathroom Directory
 
 The directory lets students search by building, floor, or room number. Filters can be used to find highly rated, accessible, renovated, or recently reported bathrooms.
+
+![Bathroom directory mockup](bathroom-directory.png)
 
 ### Interactive Map
 
@@ -68,7 +70,7 @@ The project is intended to make it easier for students to find useful and curren
 
 The current prototype does not require a build step. The main prototype files are:
 
-* `loolocator_campus.html` — bathroom directory, map, bathroom details, favorites, and admin queue.
+* `manoa-bathroom-finder-mockup.html` — bathroom directory, map, bathroom details, favorites, and admin queue.
 * `campus_bathroom_rating_reviews.html` — ratings, reviews, quick reports, and the community feed.
 
 The current mockup uses sample data in the browser. A production version will need a shared database, authentication, authorization, and permanent moderation.
