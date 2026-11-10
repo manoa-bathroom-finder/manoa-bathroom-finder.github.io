@@ -52,6 +52,8 @@ The map displays restroom locations across campus. Selecting a location shows it
 
 The details view shows the restroom type, stall count, renovation date, accessibility information, favorites, ratings, and recent community reports.
 
+![Bathroom details mockup with demo ratings](bathroom-details.png)
+
 ### Reviews
 
 Students can submit an overall star rating, cleanliness score, odor score, supply checks, tags, and a written comment. The review prototype also includes a preview of the post before it is submitted.
