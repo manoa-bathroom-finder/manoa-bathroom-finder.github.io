@@ -114,3 +114,5 @@ Walkthrough videos have not been recorded yet. A future walkthrough will demonst
 * Kainalu Ishikawa
 * Mina Girgis
 * Junhong Xiong
+
+[Team Contract](https://docs.google.com/document/d/1HAmrxqY5iD_ex8r_4eDPRyNtqC99hyQi__yDae6Tv88/edit?usp=sharing)
