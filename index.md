@@ -36,6 +36,9 @@ The manoa-bathroom-finder project home page is deployed at [manoa-bathroom-finde
 
 The application source is available in the [manoa-bathroom-finder repository](https://github.com/manoa-bathroom-finder/manoa-bathroom-finder).
 
+- [GitHub organization](https://github.com/manoa-bathroom-finder)
+- [Documentation repository](https://github.com/manoa-bathroom-finder/manoa-bathroom-finder.github.io)
+
 ## User Guide
 
 ### Bathroom Directory
