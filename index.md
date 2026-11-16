@@ -32,6 +32,8 @@ The current prototype is built with HTML, CSS, and JavaScript. It uses Tailwind 
 
 The manoa-bathroom-finder project home page is deployed at [manoa-bathroom-finder.github.io](https://manoa-bathroom-finder.github.io/).
 
+[Open the deployed application on Vercel](https://manoa-bathroom-finder.vercel.app/).
+
 The application source is available in the [manoa-bathroom-finder repository](https://github.com/manoa-bathroom-finder/manoa-bathroom-finder).
 
 ## User Guide
