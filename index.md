@@ -68,7 +68,7 @@ The sign-in page uses a standard login interface where users can enter their ema
 
 The directory lets students search by building, floor, or room number. Filters can be used to find highly rated, accessible, renovated, or recently reported bathrooms.
 
-![Bathroom directory mockup](M1Dashboard.png)
+![Bathroom directory mockup](M1DashBoard.png)
 
 ### Interactive Map
 
