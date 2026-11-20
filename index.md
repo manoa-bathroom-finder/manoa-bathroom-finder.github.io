@@ -52,17 +52,21 @@ The [M2 Project board](https://github.com/orgs/manoa-bathroom-finder/projects/5)
 
 ## User Guide
 
+### Landing Page
+
+Manoa Bathroom Finder provides UH Manoa students with an easy way to locate and compare campus bathrooms. Users can explore restroom locations, check community ratings and recent condition reports, and find bathrooms that best fit their needs.
+
 ### Bathroom Directory
 
 The directory lets students search by building, floor, or room number. Filters can be used to find highly rated, accessible, renovated, or recently reported bathrooms.
 
-![Bathroom directory mockup](bathroom-directory.png)
+![Bathroom directory mockup](M1Dashboard.png)
 
 ### Interactive Map
 
 The map displays restroom locations across campus. Selecting a location shows its details and allows the student to inspect or report its condition.
 
-![Interactive map mockup](bathroom-map.png)
+![Interactive map mockup](M1Map.png)
 
 ### Bathroom Details
 
@@ -84,7 +88,7 @@ Students can quickly report that a restroom was freshly sanitized, out of paper 
 
 Administrators will be able to review bathroom requests, data corrections, reviews, and condition reports before approving or rejecting them.
 
-![Administration mockup](bathroom-admin.png)
+![Administration mockup](M1Admin.png)
 
 ## Community Feedback
 
