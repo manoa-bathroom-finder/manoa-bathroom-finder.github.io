@@ -4,6 +4,7 @@
 
 * [Overview](#overview)
 * [Deployment](#deployment)
+* [Milestones](#milestones)
 * [User Guide](#user-guide)
 * [Community Feedback](#community-feedback)
 * [Developer Guide](#developer-guide)
@@ -38,6 +39,16 @@ The application source is available in the [manoa-bathroom-finder repository](ht
 
 - [GitHub organization](https://github.com/manoa-bathroom-finder)
 - [Documentation repository](https://github.com/manoa-bathroom-finder/manoa-bathroom-finder.github.io)
+
+## Milestones
+
+### Milestone 1
+
+The [M1 Project board](https://github.com/orgs/manoa-bathroom-finder/projects/2) tracks the first release, including completed issues and their estimated and actual effort.
+
+### Milestone 2
+
+The [M2 Project board](https://github.com/orgs/manoa-bathroom-finder/projects/5) tracks planned work for the second release.
 
 ## User Guide
 
